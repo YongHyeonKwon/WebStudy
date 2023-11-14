@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!--
+		스크립트릿(Scriptlet)
+		: JSP 페이지 내부에 자바코드를 사용할 수 있게끔 도와주는 구성요소 
+	 -->
+	
+	<%
+		// 정수형 num을 선언해서 4라는 숫자로 초기화
+		int num = 5;
+		if (num % 2 == 0) {%>
+			<h3>짝수입니다.</h3>
+		<%}%>
+	
+
+</body>
+</html>

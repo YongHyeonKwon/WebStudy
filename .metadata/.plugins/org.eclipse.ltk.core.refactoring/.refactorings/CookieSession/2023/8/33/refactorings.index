@@ -1,0 +1,9 @@
+1692168536446	Move 'Ex03_RemoveCookie.jsp' to 'webapp'
+1692254157169	Move 'Ex01_CreateSession.jsp' to 'webapp'
+1692256612464	Rename resource 'RemoveSession.jsp'
+1692257559256	Rename resource 'Ex03_invalidateSession.jsp'
+1692258190818	Delete element
+1692258373945	Move 'logincheck.jsp' to 'webapp'
+1692258388212	Move 'loginform.jsp' to 'webapp'
+1692318143038	Move 3 resources to 'Cookie'
+1692318162352	Move 4 resources to 'Session'

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+ <form action="result.jsp" method="post">
+    <table border="1px solid black">
+        <tr>
+            <td align="center" colspan="2">이름</td>
+            <!--셀을 가로로 병합할 때는 colspan="합치는 칸"-->
+            <th colspan="3">
+				<input type="name" name="name" placeholder="이름을 입력해주세요." maxlength="5">
+			</th>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">좋아하는 과일</td>
+            <td colspan="3">
+				사과<input type="checkbox" name="fruit" value="사과"> 
+				멜론<input type="checkbox" name="fruit" value="멜론">
+				수박<input type="checkbox" name="fruit" value="수박">
+			</td>
+            <!--셀을 세로로 병합할 때는 rowspan="합칠 값"-->
+        </tr>
+             <td colspan="2"></td>
+             <td colspan="3"><input type="submit" value="전송"></td>
+        <tr>
+        </tr>
+    </table>
+ </form>
+ 
+</body>
+</html>

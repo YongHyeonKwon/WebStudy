@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.model.MessageMapper">
+	
+	<!-- 메세지를 보내주는(추가하는) sql문장 작성 -->
+	<!-- num, sendName, receiveEmail, message, m_data -->
+	<insert id="insertMsg" parameterType="com.smhrd.model.Message">
+		insert into web_message values(
+			num_message.nextval,
+			#{sendName},
+			#{receiveEmail},
+			#{message},
+			sysdate
+		)	
+	</insert>
+	
+	<select id="selectAll" parameterType="String" resultType="com.smhrd.model.Message">
+			select * from web_message where receiveEmail = #{email} order by num
+	</select>
+	
+	<delete id="deleteAll" parameterType="String">
+		delete from web_message where receiveEmail = #{email}
+	</delete>
+	
+	<delete id="deleteOne" parameterType="int">
+		delete from web_message where num = #{num}
+	</delete>
+</mapper>
